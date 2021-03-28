@@ -1,15 +1,16 @@
-//this is the index which gives the routes locations
+
 const router = require('express').Router();
 
 const apiRoutes = require('./api');
-const userRoutes = require('./user-routes.js');
-const postRoutes = require('./post-routes');
-const commentRoutes = require('./comment-routes');
+const homeRoutes = require('./home-routes.js');
 
 
+router.use('/api', apiRoutes);
+router.use('/', homeRoutes);
 
-router.use('/users', userRoutes);
-router.use('/users', postRoutes);
-router.use('/users', commentRoutes);
+
+router.use((req, res) => {
+  res.status(404).end();
+});
 
 module.exports = router;

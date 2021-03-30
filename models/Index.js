@@ -22,14 +22,14 @@ Comment.belongsTo(Post, { //one to one
     foreignKey: 'post_id'
 });
 
-//don't believe this is necessary.
-//Comment.belongsTo(User, { //many to one
-//    foreignKey: 'user_id'
-//});
 
-//User.hasMany(Comment, { //one to many 
-//    foreignKey: 'user_id'
-//});
+Comment.belongsTo(User, { //many to one
+    foreignKey: 'user_id'
+});
+
+User.hasMany(Comment, { //one to many 
+    foreignKey: 'user_id'
+});
   
 
 

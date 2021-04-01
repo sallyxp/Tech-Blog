@@ -13,7 +13,7 @@ const commentData = [
     },
     {
         user_id: 1,
-        post_id: 4,
+        post_id: 5,
         comment_text: "The bartender smiles and says 'For you, no charge."
     }
 

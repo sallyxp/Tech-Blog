@@ -8,7 +8,7 @@ const postData = [
     },
     {//2
         title: "if it's green and wiggles ....",
-        post_content: "Got no nose? How doit's Biology.  If it stinks, it's Chemistry.",
+        post_content: "it's Biology.  If it stinks, it's Chemistry.",
         user_id: 2
     },
     {//3
@@ -16,12 +16,12 @@ const postData = [
         post_content: "Because it's in its ground state",
         user_id: 3
     },
-    {//3
+    {//4
         title: "Why can't you trust an atom?",
         post_content: "They make up everything",
         user_id: 4
     },
-      {//4
+      {//5
         title: "A neutron walks into a bar ..",
         post_content: "and asks 'how much?",
         user_id: 1

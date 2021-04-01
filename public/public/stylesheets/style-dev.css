@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black; 
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    color: white; 
+}
+.post-title {
+    font-size: 25px;
+    font-family: 'Turret Road', cursive;
+    font-weight: 500; 
+    padding: 10px; 
+    margin: 10px; 
+}
+.blog-title, .dash-title, .create-title, .edit-title {
+    color: white; 
+    font-size: 40px;
+    text-align: right;
+    font-family: 'Turret Road', cursive;
+    font-weight: 500;
+    text-shadow: 2px 2px 1px lime;
+}
+.post-content {
+    background-color: lime;
+    font-size: 19px;
+    padding: 10px; 
+    margin: 5px; 
+    border-radius: 10px;
+}
+.post-content:hover {
+    text-transform: none;
+}
+.post-info{
+    background-color: purple; 
+    font-size: 17px; 
+    font-style: italic;
+    font-weight: bolder;
+    text-indent: 20px;
+    border-radius: 10px;
+    text-align: right;
+    padding: 10px; 
+    margin: 10px; 
+}
+
+footer {
+    background-color: purple; 
+    font-size: 17px; 
+    font-style: italic;
+    font-weight: bolder;
+    border-radius: 10px;
+    text-align: right;
+}
+
+.login-info, .signup-info, .create-info, .edit-info{
+    color: white;
+    font-size: 20px; 
+    margin: 20px; 
+    padding: 10px; 
+    font-family: 'Turret Road', cursive;
+    font-weight: 500;
+}
+
+button {
+    font-size: 20px; 
+    margin: 20px; 
+    padding: 10px; 
+    font-family: 'Turret Road', cursive;
+    font-weight: 500;
+    background-color:purple; 
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: lime;
+}
+
+
+.comment {
+    background-color: purple; 
+    font-size: 17px; 
+    text-indent: 20px;
+    border-radius: 10px;
+    padding: 10px; 
+    margin: 10px; 
+}
+.meta {
+    font-weight:bolder;
+    font-style: italic;
+    color: white; 
+}
+
+h6 {
+    color: white; 
+    font-size: 20px;
+    font-family: 'Turret Road', cursive;
+    font-weight: 500;
+    text-align: center;
+}
+
+.textarea, textarea {
+    height: 50px; 
+    width: 75%; 
+}
+
+.post-title {
+    width: 75%; 
+}
+© 2021 GitHub, Inc.

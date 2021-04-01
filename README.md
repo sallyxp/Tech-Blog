@@ -18,3 +18,4 @@ Model: Model code typically reflects real-world things. This code can hold raw d
 - [Sequelize](https://www.npmjs.com/package/sequelize)
 - Ask BCS 
 - https://www.codecademy.com/articles/mvc - introduction to MVC
+- I worked collaboratively with other colleagues.  Thanks to Dev&Lib.

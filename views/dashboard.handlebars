@@ -1,19 +1,48 @@
-  
-    <div class="mb-5 pt-3">
-        <a href="/dashboard/create/"><button id="create-post" class="button is-primary is-pulled-right">create post</button></a>
-        
-        <h2 class="title pb-4">dashboard: your posts</h2><hr>
-{{#if posts.length}}
-    </div>
+<div class="row">
+  <div class="col-auto">
+    <h2>Welcome, {{name}}!</h2>
+  </div>
+</div>
+
+<div class="row mt-4">
+  <div class="col-md-6 new-blog">
+    <h3>Create a New Blog Post:</h3>
+
+    <form class="form new-post-form">
+      <div class="form-group">
+        <label for="post-name">Blog Title:</label>
+        <input type="text" class="form-input" id="post-name" name="post-name">
+      </div>
+      <div class="form-group">
+        <label for="post-desc">Description: </label>
+        <textarea class="form-control" id="post-desc" name="post-desc"></textarea>
+      </div>
+      <div class="form-group">
+        <button type="submit" class="btn btn-primary">Create</button>
+      </div>
+    </form>
+
+  </div>
+
+
+
+  {{#if posts.length}}
+  <div class="col-md-6 post-list">
+    <h3>Current Blog Posts:</h3>
 
     {{#each posts as |post|}}
-        {{> post-info post}}
-        
-            <a href="/dashboard/edit/{{post.id}}"><button class="button mb-5 ml-5 is-warning">edit post</button></a>
-        </div>
+    <div class="row mb-2">
+      <div class="col-md-8">
+        <h4><a href="/post/{{post.id}}">{{post.name}}</a></h4>
+      </div>
+      <div class="col-md-4">
+        <button class="btn btn-sm btn-danger" data-id="{{post.id}}">DELETE</button>
+        <a href="/dashboard/edit/{{post.id}}"><button class="button btn btn-sm btn-success"> EDIT POST </button></a>
+      </div>
+    </div>
     {{/each}}
+  </div>
+  {{/if}}
+</div>
 
-{{else}}
-<h6 class="pb-4 has-text-centered is-italic">there are currently no posts</h6>
-
-{{/if}}
+<script src="./js/dashboard.js"></script>

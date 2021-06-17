@@ -1,0 +1,37 @@
+<div class="row text-light">
+  <a href="/dashboard" class="is-pulled-right"> &larr; back to dashboard</a>
+  <div class="col-md-8 p-3 bg-light b-post text-light">
+    <h2>{{name}}</h2>
+
+    <div class="row">
+      <div class="col-md-8">
+        <p class="text-secondary text-light">{{description}}</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-8 bg-light b-post-two">
+    <p class="text-secondary pt-2 text-right text-light"> Posted by {{user.username}} on {{format_date date_created}}</p>
+  </div>
+</div>
+<br>
+
+
+{{!-- comments section --}}
+<form class="form comment-post-form comment-post-style col-md-8">
+  {{!-- <h3> Comments </h3> --}}
+  {{!-- post content/description --}}
+  <div class="form-group">
+    <label for="post-desc">Please write your comment here: </label><br>
+    <input name="comment-body" contenteditable="true" id="comment-body" />
+    {{!-- submit button --}}
+    <div class="form-group">
+      <button type="submit" class="button btn-success btn btn-sm submit"> Submit </button>
+    </div>
+</form>
+
+{{> comments comments}}
+
+<script src="/js/comment.js"></script>

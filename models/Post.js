@@ -15,10 +15,11 @@ Post.init(
         type: DataTypes.STRING,
         allowNull: false
       },
-      post_content: { //content of the post 
+      description: { //content of the post 
         type: DataTypes.TEXT,
         allowNull: true
       },
+    
       user_id: { //the id of the user who wrote the post 
         type: DataTypes.INTEGER,
         references: {

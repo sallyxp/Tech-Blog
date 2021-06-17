@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/sallyxp/Tech-Blog#readme",
   "dependencies": {
+    "@types/sequelize": "^4.28.9",
     "auth": "0.0.9",
     "bcrypt": "^5.0.1",
     "connect-session-sequelize": "^7.1.1",

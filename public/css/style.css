@@ -1,0 +1,60 @@
+/* second go */
+.footer-span{
+    color: white;
+}
+
+.footer {
+    z-index: 1;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: slategray !important;
+}
+
+body {
+    background-color:#6699cc;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.navbar {
+    background-color: 	slategray !important;
+}
+
+.b-post {
+    background-color: slategray !important;
+    color: white;
+    border-radius: 15px 15px 0px 0px; 
+}
+
+.b-post-two {
+    background-color: lightsteelblue !important;
+    color: white !important;
+    border-radius: 0px 0px 15px 15px;
+}
+
+.comment-post-style {
+    background-color:steelblue !important;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.home-list {
+    background-color:lightsteelblue;
+    border-radius: 20px;
+}
+
+.new-blog, .login-form, .signup-form {
+    background-color: lightsteelblue;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.login-btn, .signup-btn, .comment-submit {
+    background-color: slategray !important;
+}
+/* .comment {
+    background-color: steelblue;
+    padding: 20px;
+} */

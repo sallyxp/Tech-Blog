@@ -1,10 +1,11 @@
+const { DataTypes, DATE } = require('sequelize/types');
 const { Post } = require('../models');
 
 const postData = [
     {//1
         title: "Perpetual Motion Machine runs out of steam",
         post_content: "We obey the Laws of Physics in this Household says Homer Simpson",
-        user_id: 2
+        user_id: 1
     },
     {//2
         title: "if it's green and wiggles ....",
@@ -24,7 +25,7 @@ const postData = [
       {//5
         title: "A neutron walks into a bar ..",
         post_content: "and asks 'how much?",
-        user_id: 1
+        user_id: 4
     }
 
 

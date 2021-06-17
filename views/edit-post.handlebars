@@ -1,19 +1,22 @@
+0 lines (20 sloc)  919 Bytes
   
-    <div class="mb-5 pt-3">
-        <a href="/dashboard/create/"><button id="create-post" class="button is-primary is-pulled-right">create post</button></a>
-        
-        <h2 class="title pb-4">dashboard: your posts</h2><hr>
-{{#if posts.length}}
-    </div>
-
-    {{#each posts as |post|}}
-        {{> post-info post}}
-        
-            <a href="/dashboard/edit/{{post.id}}"><button class="button mb-5 ml-5 is-warning">edit post</button></a>
-        </div>
-    {{/each}}
-
-{{else}}
-<h6 class="pb-4 has-text-centered is-italic">you do not currently have any posts</h6>
-
-{{/if}}
+<article class="p-2"style="background-color: lightsteelblue ">
+  <a href="/dashboard" class="is-pulled-right"> &larr; back to dashboard</a>
+  <h2 class="title mt-3">Edit post</h2><hr>
+<form class="form new-post-form edit-post-form">
+  {{!-- post title --}}
+      <div class="form-group">
+        <label for="post-title">Post Title:</label><br>
+      <input name="edit-post-title" contenteditable="true" id="post-name" value="{{username}}" /> 
+      </div>
+      {{!-- post content/description --}}
+      <div class="form-group">
+        <label for="post-desc">Post Content:</label><br>
+      <input name="edit-post-body" contenteditable="true" id="post-desc" value="{{description}}" /> 
+      {{!-- submit button --}}
+      <div class="form-group">
+        <button type="submit" class="button btn-success btn btn-sm submit"> Save Changes</button>
+      </div>
+    </form>
+</article>
+<script src="/js/editpost.js"></script>

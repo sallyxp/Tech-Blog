@@ -1,6 +1,8 @@
 # Tech-Blog
 This is a project to create a Tech Blog - a Content Management System (CMS) style blog site built to publish articles, blog posts, thoughts and opinions.  It is created, as tasked, using the Model-View-Controller paradigm.  The system is created using node.js, handlebars.js, Sequelize and mySQL2.
 
+My app is deployed in Heroku here: https://tech-blog-sally.herokuapp.com/
+
 
 ## *MVC Model-View-Controller* 
 MVC is short for Model, View, and Controller. MVC is a popular way of organizing code. The big idea behind MVC is that each section of your code has a purpose, and those purposes are different. Some of your code holds the data of your app, some of your code makes your app look nice, and some of your code controls how your app functions.

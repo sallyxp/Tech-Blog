@@ -54,6 +54,7 @@ body {
 .login-btn, .signup-btn, .comment-submit {
     background-color: slategray !important;
 }
+
 /* .comment {
     background-color: steelblue;
     padding: 20px;

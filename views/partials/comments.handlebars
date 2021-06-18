@@ -1,7 +1,7 @@
 <section class="comment">
   {{#each this}}
   <div class="text">
-   Comment by {{this.user.username}} on {{format_date date_created}}
+   Comment by {{this.user.name}} on {{post.date-created}}
   </div>
   <div class="text">
     {{this.comment_text}}

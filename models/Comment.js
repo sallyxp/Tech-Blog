@@ -13,7 +13,7 @@ Comment.init(
     },
     user_id: { //the id of the user who left the comment 
       type: DataTypes.INTEGER,
-      allowNull: false,
+      allowNull: true,
       references: {
           model: 'user',
           key: 'id'

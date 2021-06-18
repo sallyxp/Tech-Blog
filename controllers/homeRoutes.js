@@ -3,14 +3,15 @@ const { Post, User, Comment } = require('../models');
 const withAuth = require('../utils/auth');
 
 //GET all posts 
+  // Get all posts and JOIN with user data
 router.get('/', withAuth, async (req, res) => {
   try {
-    // Get all posts and JOIN with user data
+  
     const postData = await Post.findAll({
       include: [
           {
           model: User,
-          attributes: ['username'],
+          attributes: ['id'],
           },
       ],
     });
@@ -30,20 +31,22 @@ router.get('/', withAuth, async (req, res) => {
 });
 
 //GET post by id - edit etc
+// Edit post
 router.get('/post/:id', async (req, res) => {
   try {
     const postData = await Post.findByPk(req.params.id, {
       include: [
         {
           model: Comment,
-          include: [User.id],
+          include: [User],
         },
         {
           model: User,
-          attributes: ['username'],
+          attributes: ['name'],
         },
       ],
     });
+
 
     const post = postData.get({ plain: true });
 

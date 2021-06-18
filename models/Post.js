@@ -11,6 +11,10 @@ Post.init(
         primaryKey: true,
         autoIncrement: true
       },
+      name: { //name
+        type: DataTypes.STRING,
+        allowNull: false
+      },
       title: { //title of the post 
         type: DataTypes.STRING,
         allowNull: false
@@ -19,7 +23,11 @@ Post.init(
         type: DataTypes.TEXT,
         allowNull: true
       },
-    
+      date_created: {
+        type: DataTypes.DATE,
+        allowNull: true,
+        defaultValue: DataTypes.NOW,
+      },
       user_id: { //the id of the user who wrote the post 
         type: DataTypes.INTEGER,
         references: {

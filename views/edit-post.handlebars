@@ -1,4 +1,3 @@
-0 lines (20 sloc)  919 Bytes
   
 <article class="p-2"style="background-color: lightsteelblue ">
   <a href="/dashboard" class="is-pulled-right"> &larr; back to dashboard</a>
@@ -7,16 +6,16 @@
   {{!-- post title --}}
       <div class="form-group">
         <label for="post-title">Post Title:</label><br>
-      <input name="edit-post-title" contenteditable="true" id="post-name" value="{{username}}" /> 
+      <input name="edit-post-title" contenteditable="true" id="post-name" value="{{title}}" /> 
       </div>
       {{!-- post content/description --}}
       <div class="form-group">
         <label for="post-desc">Post Content:</label><br>
-      <input name="edit-post-body" contenteditable="true" id="post-desc" value="{{description}}" /> 
+      <input name="edit-post-body width="80%"  contenteditable="true" id="post-desc" value="{{description}}" /> 
       {{!-- submit button --}}
       <div class="form-group">
         <button type="submit" class="button btn-success btn btn-sm submit"> Save Changes</button>
       </div>
     </form>
 </article>
-<script src="/js/editpost.js"></script>
+<script src="/javascript/edit-post.js"></script>

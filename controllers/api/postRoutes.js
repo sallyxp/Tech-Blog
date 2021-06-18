@@ -3,12 +3,16 @@ const router = require('express').Router();
 const { Post, User, Comment } = require('../../models');
 const withAuth = require('../../utils/auth');
 
-//GET all posts
+//create a new post
 router.post('/', withAuth, async (req, res) => {
+  console.log("Hit create new post");
   try {
     const newPost = await Post.create({
       ...req.body,
+      id: req.params.id,
       user_id: req.session.user_id,
+      post_id: parseInt(req.body.post_id),
+   
     });
 
     res.status(200).json(newPost);
@@ -33,6 +37,7 @@ router.delete('/:id', withAuth, async (req, res) => {
 
     res.status(200).json(postData);
   } catch (err) {
+    console.log("in line 37");
     res.status(500).json(err);
   }
 });

@@ -22,7 +22,7 @@ router.post('/', withAuth, async (req, res) => {
 
 
 
-router.delete('/:id', withAuth, async (req, res) => {
+router.delete('dashboard/delete/:id', withAuth, async (req, res) => {
   console.log("this is the info delete");
   console.log(post);
   try {

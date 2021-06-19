@@ -49,7 +49,8 @@ router.get('/post/:id', async (req, res) => {
 
 
     const post = postData.get({ plain: true });
-
+    console.log("this is the info sending down to template");
+    console.log(post);
     res.render('post', {
       ...post,
       logged_in: req.session.logged_in

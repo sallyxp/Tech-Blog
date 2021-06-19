@@ -45,6 +45,11 @@ body {
     border-radius: 20px;
 }
 
+.label {
+    width: 40%;
+    
+}
+
 .new-blog, .login-form, .signup-form {
     background-color: lightsteelblue;
     border-radius: 20px;
@@ -54,6 +59,8 @@ body {
 .login-btn, .signup-btn, .comment-submit {
     background-color: slategray !important;
 }
+
+
 
 /* .comment {
     background-color: steelblue;
